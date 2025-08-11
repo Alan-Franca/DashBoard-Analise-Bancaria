@@ -52,7 +52,7 @@ Clone este repositório para a sua máquina local:
 
 Bash
 
-git clone https://github.com/Alan-Franca/DashBoard-Analise-Bancaria.git
+git clone https://github.com/seugithub/seurepositório
 Navegue até a pasta do projeto.
 
 Abra o arquivo index.html em qualquer navegador de internet moderno (como Google Chrome, Firefox, ou Microsoft Edge).
