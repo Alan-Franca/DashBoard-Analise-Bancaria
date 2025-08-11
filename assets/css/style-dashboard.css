@@ -1,0 +1,33 @@
+body {
+            font-family: 'Inter', sans-serif; /* Define a fonte 'Inter' como padrão, com uma fonte sans-serif como fallback */
+            background-color: #f3f4f6; /* Define a cor de fundo como cinza claro (Tailwind gray-100) */
+        }
+        /* Estilização para os contentores dos gráficos */
+        .chart-container {
+            background-color: white; /* Define a cor de fundo como branca */
+            padding: 20px; /* Adiciona preenchimento interno de 20 pixels */
+            border-radius: 8px; /* Adiciona cantos arredondados de 8 pixels */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+            margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+            height: 400px; /* Define uma altura fixa de 400 pixels para os contentores */
+            display: flex; /* Ativa o layout flexbox */
+            flex-direction: column; /* Organiza os itens filhos em coluna */
+            justify-content: center; /* Centraliza o conteúdo verticalmente */
+        }
+        /* Estilização para os títulos dos gráficos */
+        .chart-title {
+            text-align: center; /* Centraliza o texto */
+            font-size: 1.125rem; /* Define o tamanho da fonte (equivalente a text-lg do Tailwind) */
+            font-weight: 600; /* Define o peso da fonte como semi-negrito (font-semibold do Tailwind) */
+            margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels */
+            color: #1f2937; /* Define a cor do texto como cinza escuro (Tailwind gray-800) */
+        }
+        /* Estilização responsiva para os gráficos em ecrãs menores */
+        @media (max-width: 768px) { /* Aplica estas regras quando a largura do ecrã for no máximo 768 pixels */
+            .grid-cols-1 { /* Garante que em ecrãs pequenos, o layout seja sempre de uma coluna */
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+            .md\:grid-cols-2 { /* Para ecrãs médios (definidos pelo Tailwind como >= 768px), mas aqui sobrescrevemos para 1 coluna em ecrãs menores */
+                 grid-template-columns: repeat(1, minmax(0, 1fr)); /* Força uma coluna em ecrãs menores que 768px */
+            }
+        }
